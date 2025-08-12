@@ -1,0 +1,35 @@
+#b1 
+{
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height :100hv;
+    flex-direction: column;
+
+}
+h1{
+    color: brown;
+}
+h2{
+    color: red;
+}
+form{
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+#Add,#Sub,#Mul,#Div,#Mod,#Pow,#FloorDiv{
+    font-size: 20px;
+    padding: 5px 15ox;
+    
+    margin :5px;
+}
+form h3 {
+    font-size: 30px;
+    margin-top: 15px;
+    color: rgb(215, 20, 157);
+}

@@ -1,0 +1,103 @@
+---------FLASK-----
+* It is a Web FrameWork(Light Weight)
+* That provides libraries to build lightWeight Web applications in python
+* Developer is Armin Ronacher Who leads an international group of python enthuasisats(POOCCO)
+* It is based on WSGI toolkit and jinja2 template Engine
+* It is consider as micro FrameWork
+--------WSGI--------
+* It is interface between web servers and web apps for python
+* mod_wsgi is an Apache HTTP server module that enables Apache to server Flask applications.
+------Jinja2-------
+* It is a template Engine which combines a template with a certain data source to render the dynamic web apps
+
+--->Flask is more popular due to WSGI and Jinja2.
+
+
+------Features of Flask-----------------------------------
+
+-----:> Fast  Debugging.
+-----:> RestFul Request Handling.
+-----:> Application Programming Interface.
+-----:> Flexible Configuration.
+-----:> Integrated unit Testing.
+
+-------Companies uses Flask------------------------------------
+
+-----:> Netflix,uber,lyft,mozila,MIT,Reddit,Airbnb.
+
+-------Advantages---------------------------------------------
+
+1. Higher Compatability with lastest technologies.
+2. Technical experimentation.
+3. Easier to use for simple cases,Easy development.
+4. codebase size is relatively smaller.
+5. High Scalability.
+6. Easy to build a quick prototype.
+7. Routing URL is easy.
+8. extensible,Powewrful.
+9. DataBase integration is esay.
+
+------------DisAdvantages-------------------------------------
+
+1. High cost.
+2. Asyn may be little problem.
+3. Lack of DB or ORM.
+4. limited support.
+5. smaller community compared to Django.
+6. Complicated maintance for large implementations.
+
+-----to run 
+1. python -m venv venv.
+2. venv/Scripts/Activate.
+3. pip install flask.
+
+
+
+App Routing---------
+* It is a used to map the specific URL with the associated function that is intended to perform some task.
+* It is used to access some particular page
+
+add_url_rule() function------------
+* It is another approach to perform routing for the flask web application
+* It uses add_url_rule() 
+* Syntax------
+   add_url_rule(<url rule>,<endpoint>,<view function>)
+
+Flask Template--------------------------
+
+Delimiters--------
+* Jinja2 template Engine provides some Delimiters which can be used in the HTML to make it capable
+   of dynamic data representation.
+* The Template system provides some HTML syntax which are placeholders for variables and expressiions
+  that are replaced by their actual values when the template is rendered.
+
+  *the Delimiters to escape from the HTML
+      --->{%......%} for statements.
+      --->{{....}} for expressions to print to the template output.
+      ---->{#....#} for the comments that are not included in the template output.
+      ---->#......###  for line statements.
+
+Flask HTTP methods--------
+HTTP------
+* Hyper Text Transfer Protocol where it is a used to Transfer the data in WWW.
+* All web FrameWorks need these for data Communication.
+Methods---------
+  * GET--->it used to send data in the unencrypted from the server.
+  * POST--->it used to send the from data to server.The server does not cache the data transmitted using the post methods
+  * PUT--->it is used to replace all the current representation of the target resources with the uploaded content.
+  * DELETE--->it is used to delete all the current representation of the target resource specified in the URL.
+
+
+
+------Django vs Flask
+* it is fullstack web FrameWork || lightWeight FrameWork
+
+
+------------render_template----
+
+render_template() is a Flask function used to:
+👉 Render (display) an HTML page and optionally pass Python data into that HTML page using Jinja2 templating.
+
+
+-------link css
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">

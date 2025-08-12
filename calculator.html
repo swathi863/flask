@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body  id="b1">
+    <form method="POST">
+        <h1 style="text-align: center;">Calculator</h1>
+        Number1:<input type="number"  name="Number1" required><br><br>
+        Number2:<input type="number"  name="Number2" required><br><br>
+        <button type="submit" name="operation" value="Add" id="Add" >Add</button>
+        <button type="submit" name="operation" value="Sub" id="Sub">Sub</button>
+        <button type="submit" name="operation" value="Mul" id="Mul">Mul</button>
+        <button type="submit" name="operation" value="Div" id="Div">Div</button><br><br>
+        <button type="submit" name="operation" value="Mod" id="Mod">Mod</button>
+        <button type="submit" name="operation" value="Pow" id="Pow">Pow</button>
+        <button type="submit" name="operation" value="FloorDiv" id="FloorDiv">FloorDiv</button>
+
+
+
+
+        {% if res %}
+        <h3 style="text-align: center;">Result:{{ res }}</h3>
+        {% endif %}
+
+    </form>
+    
+</body>
+</html>
